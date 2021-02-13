@@ -12,6 +12,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import cl.simulacion.elvacunazo.repositorios.IAgendasRepositorio;
+import cl.simulacion.elvacunazo.services.IAgendasService;
 import cl.simulacion.elvacunazo.services.IEspecialidadesService;
 
 /**
@@ -23,11 +25,16 @@ public class HomeController {
 	@Autowired
 	IEspecialidadesService especialidadesServ;
 	
+	@Autowired
+	IAgendasService agendaServ;
+	
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Model model) {
+		
+		model.addAttribute("agendas", agendaServ.getAllAgendas());
 		
 		
 		model.addAttribute("especialidades", especialidadesServ.getAllEspacilidades() );

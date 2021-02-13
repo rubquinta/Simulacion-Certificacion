@@ -24,7 +24,7 @@
 	
 	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
 		<property name="dataSource" ref="ds"></property>
-		<property name="packagesToScan" value="cl.prueba.stock.model"></property>
+		<property name="packagesToScan" value="cl.simulacion.elvacunazo.model"></property>
 		<property name="jpaVendorAdapter">
 			<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"></bean>
 		</property>

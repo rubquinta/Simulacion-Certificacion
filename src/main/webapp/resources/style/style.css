@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e6e6e6;
+}
+
+header, main, footer{
+    background: #ffffff;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.imgHeader{
+    max-width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+img{    
+    width:100%;
+    height: auto;
+	overflow:hidden; 
+    margin-bottom:20px;
+}
+
+form{
+    padding: 10px;
+}
+
+#especialidad{
+		 float:left;
+		width:200px;
+		
+}
+
+#buscar{
+		 float:left;
+		width:200px;
+		margin-left: 30px;
+		margin-bottom: 10px; 
+		
+}

@@ -38,8 +38,8 @@
 		</div>
     	
 		<br>
-       <table class="table table-bordered border-primary">
-       	<thead>
+       <table class="table table-bordered">
+       	<thead class="table-secondary">
        		<tr>
        			<td>Paciente</td>
        			<td>Doctor (a)</td>
@@ -82,5 +82,9 @@
        </table>
 
     </div>
+    <script>
+    
+    
+    </script>
 </body>
 </html>

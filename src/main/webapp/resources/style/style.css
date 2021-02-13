@@ -45,3 +45,12 @@ form{
 		margin-bottom: 10px; 
 		
 }
+.selected{
+            cursor: pointer;
+            
+        }
+.selected:hover{
+            background-color: #0585C0;
+            color: white;
+
+        }

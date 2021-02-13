@@ -44,6 +44,10 @@ public class HomeController {
 		
 		model.addAttribute("agendas", agendaServ.getAllAgendas());
 		
+		/*
+		 * Se hizo esta funcion similar pero intentando usar un Query que organice por nombre,
+		 * no funcionó, falta reforzar querys específicas o uso de JPQL
+		 */
 		model.addAttribute("pacientes", pacientesServ.findAllPacients());
 		
 		model.addAttribute("doctores", doctoresServ.getAllDoctores());		

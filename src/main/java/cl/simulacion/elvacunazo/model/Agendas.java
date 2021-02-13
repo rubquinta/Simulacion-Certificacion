@@ -1,22 +1,26 @@
 package cl.simulacion.elvacunazo.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="AGENDAS")
 public class Agendas {
 
 	@Id
+	@Column(name="IDPACIENTE")
 	public int idPaciente;
-	
+	@Column(name="IDDOCTOR")
 	public int idDoctor;
-	
+	@Column(name="IDAGENDA")
 	public int idAgenda;
-	
+	@Column(name="FECHA")
 	public String fecha;
-	
+	@Column(name="HORADESDE")
 	public String horadesde;
-	
+	@Column(name="DURACION")
 	public int duracion;
 
 	public Agendas() {

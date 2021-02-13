@@ -50,6 +50,33 @@
        	</thead>
        	<tbody>
        		
+         	<c:forEach var="a" items="${agendas}">
+       			<c:forEach var = "p" items="${pacientes }">
+       				<c:forEach var = "d" items="${doctores }">
+       					<c:forEach var = "e" items="${especialidades}">
+       				<tr>
+       					<td>
+	         				<c:out value="${p.getNombre() }"></c:out>
+	         			</td>
+	         			<td>
+	         				<c:out value="${d.getNombre() }"></c:out>
+	         			</td>
+	         			<td>
+	         				<c:out value="${e.getDescripcion()}"></c:out>
+	         			</td>
+	         			<td>
+	         				<c:out value="${a.getFecha()}"></c:out>
+	         			</td>
+	         			<td>
+	         				<c:out value="${a.getHoradesde()}"></c:out>
+	         			</td>    
+         			</tr>
+         				</c:forEach>
+         			</c:forEach>
+       			</c:forEach>
+      			</c:forEach>
+         	 
+        
        	
        	</tbody>
        </table>

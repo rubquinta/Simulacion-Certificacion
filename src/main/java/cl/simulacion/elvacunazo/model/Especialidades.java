@@ -1,14 +1,18 @@
 package cl.simulacion.elvacunazo.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="ESPECIALIDADES")
 public class Especialidades {
 	
 	@Id
+	@Column(name="IDESPECIALIDAD")
 	public int idEspecialidad;
-	
+	@Column(name="DESCRIPCION")
 	public String descripcion;
 	
 	public Especialidades() {

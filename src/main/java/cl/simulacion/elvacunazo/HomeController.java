@@ -14,7 +14,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import cl.simulacion.elvacunazo.repositorios.IAgendasRepositorio;
 import cl.simulacion.elvacunazo.services.IAgendasService;
+import cl.simulacion.elvacunazo.services.IDoctoresService;
 import cl.simulacion.elvacunazo.services.IEspecialidadesService;
+import cl.simulacion.elvacunazo.services.IPacientesService;
 
 /**
  * Handles requests for the application home page.
@@ -28,6 +30,12 @@ public class HomeController {
 	@Autowired
 	IAgendasService agendaServ;
 	
+	@Autowired
+	IPacientesService pacientesServ;
+	
+	@Autowired
+	IDoctoresService doctoresServ;
+	
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
@@ -36,6 +44,9 @@ public class HomeController {
 		
 		model.addAttribute("agendas", agendaServ.getAllAgendas());
 		
+		model.addAttribute("pacientes", pacientesServ.getAllPacientes());
+		
+		model.addAttribute("doctores", doctoresServ.getAllDoctores());		
 		
 		model.addAttribute("especialidades", especialidadesServ.getAllEspacilidades() );
 		

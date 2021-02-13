@@ -56,10 +56,10 @@
        					<c:forEach var = "e" items="${especialidades}">
        				<tr>
        					<td>
-	         				<c:out value="${p.getNombre() }"></c:out>
+	         				<c:out value="${p.getNombre() }"></c:out> <c:out value="${p.getApellido() }"></c:out>
 	         			</td>
 	         			<td>
-	         				<c:out value="${d.getNombre() }"></c:out>
+	         				<c:out value="${d.getNombre() }"></c:out> <c:out value="${d.getApellido() }"></c:out>
 	         			</td>
 	         			<td>
 	         				<c:out value="${e.getDescripcion()}"></c:out>

@@ -5,8 +5,12 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Immutable;
+import org.hibernate.annotations.Subselect;
+
 @Entity
-@Table(name="ESPECIALIDADES")
+@Immutable
+@Subselect("  select especialidades.idespecialidad, especialidades.descripcion from especialidades order by especialidades.descripcion asc")
 public class Especialidades {
 	
 	@Id

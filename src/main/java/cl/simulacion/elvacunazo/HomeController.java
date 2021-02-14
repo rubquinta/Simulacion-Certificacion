@@ -13,7 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import cl.simulacion.elvacunazo.repositorios.IAgendasRepositorio;
+import cl.simulacion.elvacunazo.repositorios.IDetalleAgenda;
 import cl.simulacion.elvacunazo.services.IAgendasService;
+import cl.simulacion.elvacunazo.services.IDetalleAgendaService;
 import cl.simulacion.elvacunazo.services.IDoctoresService;
 import cl.simulacion.elvacunazo.services.IEspecialidadesService;
 import cl.simulacion.elvacunazo.services.IPacientesService;
@@ -36,25 +38,19 @@ public class HomeController {
 	@Autowired
 	IDoctoresService doctoresServ;
 	
-	/**
-	 * Simply selects the home view to render by returning its name.
-	 */
+	@Autowired
+	IDetalleAgendaService detalleagendaServ;
+	
+	 
+	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home(Model model) {
+	public String homeTodo(Model model) {
 		
-		model.addAttribute("agendas", agendaServ.getAllAgendas());
+		model.addAttribute("agendasdet", detalleagendaServ.getAllAgenda());
+		 
+		model.addAttribute("especialidades", especialidadesServ.getAllEspacilidades());
 		
-		/*
-		 * Se hizo esta funcion similar pero intentando usar un Query que organice por nombre,
-		 * no funcionó, falta reforzar querys específicas o uso de JPQL
-		 */
-		model.addAttribute("pacientes", pacientesServ.findAllPacients());
-		
-		model.addAttribute("doctores", doctoresServ.getAllDoctores());		
-		
-		model.addAttribute("especialidades", especialidadesServ.getAllEspacilidades() );
-		
-		return "listadocitas";
+		return "listadocitas2";
 	}
 	
 }

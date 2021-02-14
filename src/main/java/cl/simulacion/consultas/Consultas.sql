@@ -100,4 +100,5 @@ RUT del paciente.
  ORDER BY pacientes.rutpaciente asc
  ;
  
+ SELECT PACIENTES.NOMBRE FROM PACIENTES ORDER BY PACIENTES.NOMBRE ASC;
  

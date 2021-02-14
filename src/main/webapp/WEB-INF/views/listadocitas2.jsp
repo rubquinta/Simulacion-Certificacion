@@ -50,19 +50,17 @@
        	</thead>
        	<tbody>
        		
-         	<c:forEach var="a" items="${agendas}">
-       			<c:forEach var = "p" items="${pacientes}">
-       				<c:forEach var = "d" items="${doctores}">
-       					<c:forEach var = "e" items="${especialidades}">
+         	<c:forEach var="a" items="${agendasdet}">
+       			
        				<tr>
        					<td>
-	         				<c:out value="${p.getNombre()}"></c:out> <c:out value="${p.getApellido() }"></c:out>
+	         				<c:out value="${a.getNombreP()}"></c:out> <c:out value="${a.getApellidoP() }"></c:out>
 	         			</td>
 	         			<td>
-	         				<c:out value="${d.getNombre()}"></c:out> <c:out value="${d.getApellido() }"></c:out>
+	         				<c:out value="${a.getNombreD()}"></c:out> <c:out value="${a.getApellidoD() }"></c:out>
 	         			</td>
 	         			<td>
-	         				<c:out value="${e.getDescripcion()}"></c:out>
+	         				<c:out value="${a.getEspecialidad()}"></c:out>
 	         			</td>
 	         			<td>
 	         				<c:out value="${a.getFecha()}"></c:out>
@@ -71,9 +69,7 @@
 	         				<c:out value="${a.getHoradesde()}"></c:out>
 	         			</td>    
          			</tr>
-         				</c:forEach>
-         			</c:forEach>
-       			</c:forEach>
+         				
       			</c:forEach>
          	 
         

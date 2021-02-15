@@ -14,19 +14,19 @@ Tema: Generar una solución de negocio basada en una
 plataforma web construida bajo arquitectura JEE
 
 Objetivos del proyecto:
-- Desarrollo de consultas a la base de datos 
+- Desarrollo de consultas a la base de datos:
       - package: cl.simulacion.consultas
-- Crear algoritmos de acuerdo con requerimientos 
+- Crear algoritmos de acuerdo con requerimientos:
       --> package: cl.simulacion.CalculosTiempos Diarios
-- Construir unidades de prueba 
+- Construir unidades de prueba:
       --> package: src/test/java  --> cl.simulacion.elvacunazo --> TestClinicaELVacunazo
-- Crear una aplicación JEE 
+- Crear una aplicación JEE:
       --> package: 
           ->cl.simulacion.elvacunazo
           ->cl.simulacion.elvacunazo.model
           ->cl.simulacion.elvacunazo.repositorios
           ->cl.simulacion.elvacunazo.services
     
-- Implementar un servicio REST 
+- Implementar un servicio REST :
       --> package: 
           ->cl.simulacion.elvacunazo -> RestElVacunazoController.Java

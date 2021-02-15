@@ -13,7 +13,8 @@ salida del curso Full Stack Java
 Tema: Generar una solución de negocio basada en una
 plataforma web construida bajo arquitectura JEE
 
-Objetivos del proyecto: - Desarrollo de consultas a la base de datos
+Objetivos del proyecto:
+- Desarrollo de consultas a la base de datos
 - Crear algoritmos de acuerdo con requerimientos
 - Construir unidades de prueba
 - Crear una aplicación JEE

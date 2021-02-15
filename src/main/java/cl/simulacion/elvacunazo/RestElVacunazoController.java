@@ -1,4 +1,4 @@
-package cl.simulacion.elvacunazoApiRest;
+package cl.simulacion.elvacunazo;
 
 import java.util.List;
 
@@ -19,7 +19,7 @@ public class RestElVacunazoController {
 	@Autowired
 	IDetalleAgendaService detalleagendaServ; 
 	
-	@RequestMapping(value = "/api/agendas", method = RequestMethod.GET)
+	@RequestMapping(value = "/api/agendas",  headers = "Accept=application/json")
 	public List<Detalleagenda> home(Model model) { 
 		
 		return detalleagendaServ.getAllAgenda();

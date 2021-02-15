@@ -15,7 +15,7 @@ plataforma web construida bajo arquitectura JEE
 
 Objetivos del proyecto:
 - Desarrollo de consultas a la base de datos 
-      --> package: cl.simulacion.consultas
+      - package: cl.simulacion.consultas
 - Crear algoritmos de acuerdo con requerimientos 
       --> package: cl.simulacion.CalculosTiempos Diarios
 - Construir unidades de prueba 
